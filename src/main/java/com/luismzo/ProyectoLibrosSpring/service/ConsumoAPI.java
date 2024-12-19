@@ -7,11 +7,12 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsumoAPI {
-    public String obtenerDataLibros(){
+    private final String URL_BASE = "https://gutendex.com/books";
+    public String obtenerDataLibros(String query){
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://gutendex.com/books/"))
+                .uri(URI.create(URL_BASE+query))
                 .GET()
                 .build();
         HttpResponse <String> response = null;
