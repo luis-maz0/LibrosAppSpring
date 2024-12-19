@@ -15,15 +15,13 @@ public class ProyectoLibrosSpringApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//USO DE API:
-		//https://gutendex.com/books
-		/*1. DATOS LIBROS.
-
-		* * 2. TOP 10 LIBROS MAS DESCARGADOS (DIGITALES)
+/*
+		* 2. TOP 10 LIBROS MAS DESCARGADOS (DIGITALES)
 		* 3. LIBRO A BUSCAR
 		* 4. ESTADISTICAS LIBRO
-		* */
+ */
 		Principal principal = new Principal();
 		principal.mostrarLibros();
+		principal.mostrarTopLibrosMasVendidos();
 	}
 }
