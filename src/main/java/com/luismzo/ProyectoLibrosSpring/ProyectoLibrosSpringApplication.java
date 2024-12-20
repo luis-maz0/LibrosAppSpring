@@ -15,13 +15,11 @@ public class ProyectoLibrosSpringApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-/*
-		* 2. TOP 10 LIBROS MAS DESCARGADOS (DIGITALES)
-		* 3. LIBRO A BUSCAR
-		* 4. ESTADISTICAS LIBRO
- */
+		//TODO: funciona todo ok! Fataria agregar un menú interactivo.
 		Principal principal = new Principal();
 		principal.mostrarLibros();
 		principal.mostrarTopLibrosMasVendidos();
+		principal.buscarLibro();
+		principal.mostrarEstadisticas();
 	}
 }
